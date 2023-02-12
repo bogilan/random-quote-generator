@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.quote-container {
+    width: 500px;
+    margin-top: 50px;
+    background-image: linear-gradient(to left top, #f7c7f3, #9198e5);;
+    padding: 25px 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
+    color: #2f0457;
+}
+
+.quote-heading {
+    text-align: center;
+}
+
+.quote-heading h2 {
+    font-size: 26px;
+}
+
+.quote-heading .quote-new {
+    margin: 10px 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border-radius: 5px;
+    border-color: #6971cc;
+    color: #2f0457
+}
+
+.quote-heading .quote-new:hover {
+    background-color: #ad99f5;
+    transition: .2s;
+}
+
+.quote-heading .quote-new:active {
+    padding: 6px 19px 4px 21px;
+    background-color: #2f0457;
+    color: white;
+
+}
+
+.quote-body {
+    margin: 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-body .quote-text {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.75);
+}
+
+.quote-body :nth-child(1) {
+    z-index: 1;
+    margin-bottom: -7px;
+}
+
+.quote-body :nth-child(3) {
+    align-self: flex-end;
+    margin-top: -7px;
+}
+
+.quote-body .quote-author {
+    align-self: flex-end;
+    padding: 5px 10px 0;
+    font-size: 17px;
+}
+
+.quote-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.quote-footer .quote-share,
+.quote-footer .quote-copy {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.quote-footer .quote-share {
+    color: #1DA1F2;
+    margin-right: 10px;
+}
+
+.quote-footer .quote-copy {
+    color: #2f0457;
+}
+
+.quote-footer .quote-copy:active {
+    background-color: #2f0457;
+    color: white;
+}
